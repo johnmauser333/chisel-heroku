@@ -4,4 +4,4 @@ RUN chmod +x /bin/chisel
 RUN useradd -m heroku
 USER heroku
 EXPOSE 5000
-CMD chisel server --auth $CHISEL_AUTH --port $PORT --reverse --proxy https://playstation373.herokuapp.com
+CMD chisel server --auth $CHISEL_AUTH --reverse
